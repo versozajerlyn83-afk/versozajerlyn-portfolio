@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+ 
+  <header id="header">
+    <div class="logo">MyLogo</div>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+ 
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hello, I'm <span>Jerlyn A. Versoza 27 years old live in Paluan Occ. Mindro 2nd year College</span></h1>
+      <h3>Frontend Developer</h3>
+      <p>
+        Welcome to my personal website. I love building interactive and modern web applications using clean code and creative design.
+      </p>
+      <a href="#contact" class="btn">Contact Me</a>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="home-img">
+      <img src="baho.jpg" alt= />
+    </div>
+  </section>
+
+  
+  <section class="hobbies" id="hobbies">
+    <h2>My Hobbies</h2>
+    <p>I enjoy painting, hiking, coding, and exploring new technologies during my free time.</p>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, feel free to reach out via social media or send me an email.</p>
+    <p>email: versozajerlyn83@gmail.com</p>
+    <p>contact no. 09756182028</p>
+    <p>fb: Versoza Jerlyn</p>
+    </section>
+  </section>
+
+  <script>
+
+    window.addEventListener('scroll', function () {
+      const header = document.getElementById('header');
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+  <script src="script.js" defer></script>
+
+
+</body>
+</html>
